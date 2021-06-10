@@ -1,0 +1,6 @@
+data/yolov4.weights
+*checkpoints
+*.mp4
+*.png
+*.jpg
+*.avi
