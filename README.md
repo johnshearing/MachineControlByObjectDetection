@@ -1,4 +1,4 @@
-<a href="https://johnshearing.github.io/">Click Here To See Our Other Projects</a>  
+<a href="https://johnshearing.github.io/">Contents</a>  
 
 This repository was forked from @TheAIGuy on YouTube.    
 https://www.youtube.com/@TheAIGuy/videos  
