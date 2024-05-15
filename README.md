@@ -4,8 +4,16 @@ This repository was forked from @TheAIGuy on YouTube.
 https://www.youtube.com/@TheAIGuy/videos  
 There are added Python scripts that make it work with a USB Relay to control machines based on what is detected.  
 All the added scripts are prefixed with "JRS_" in the file names.  
-The star of the show is the script JRS_DetectorSorter.py  
+
+The JRS_DetectorSorter.py script is the star of the show.
+Use this script to collect training data and also to classify images and trigger a relay based on the classification results.
+
+
+
+
 After following AIGuy's tutorial, look in JRS_DetectCommand.txt to setup and run JRS_DetectorSorter.py
+
+
 
 
 # yolov4-custom-functions
