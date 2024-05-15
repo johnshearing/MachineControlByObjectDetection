@@ -1,10 +1,15 @@
+
+This repository was forked from @TheAIGuy on YouTube.    
+https://www.youtube.com/@TheAIGuy/videos  
+There are added Python scripts that make it work with a USB Relay to control machines based on what is detected.
+
+
+
+
 # yolov4-custom-functions
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
 A wide range of custom functions for YOLOv4, YOLOv4-tiny, YOLOv3, and YOLOv3-tiny implemented in TensorFlow, TFLite and TensorRT.
-
-This repository was forked from the AI Guy on YouTube.  
-There are minor changes that make it work with a USB Relay to control machines based on what is detected.
 
 DISCLAIMER: This repository is very similar to my repository: [tensorflow-yolov4-tflite](https://github.com/theAIGuysCode/tensorflow-yolov4-tflite). I created this repository to explore coding custom functions to be implemented with YOLOv4, and they may worsen the overal speed of the application and make it not optimized in respect to time complexity. So if you want to run the most optimal YOLOv4 code with TensorFlow than head over to my other repository. This one is to explore cool customizations and applications that can be created using YOLOv4!
 
