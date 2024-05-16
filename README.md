@@ -5,7 +5,7 @@
 
 [Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)  
 
-After following the @TheAIGuy general YouTube tutorial found by scrowling down, You will know the basics of training an A.i. to classify images.  
+After following the @TheAIGuy general YouTube tutorial found by scrowling down, you will know the basics of training an A.i. to classify images.  
 Then use my Python scripts to collect and anotate training data and to control machines using A.i models that you train and which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
  
 John Shearing added Python scripts for the following:  
