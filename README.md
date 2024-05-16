@@ -1,13 +1,15 @@
 <a href="https://johnshearing.github.io/">Main list of projects</a>  
 
-# Machine Control Using A.i. Classifier  
-Originally forked from @TheAIGuy on YouTube.  
+# Machine Control Using A.i. Classifier 
+### Combines OpenCV and Deep Learning to accomplish what neither can do alone
+
+Originally a genearal A.i. training forked from @TheAIGuy on YouTube.  
 John Shearing added Python scripts for the following:  
 1. Manually and automatically collect training images   
 2. Automatically augment the training images with hulls and bounding boxes using OpenCV in order to better train the A.i.   
-3. Automatically create an anotation file for each image using data from the image's augmentations.
-4. Automatically augment images using OpenCV before before the A.i. sees them to help the A.i. with classification.  
-5. Manually and automatically trigger a USB Relay to control machines based on what the operator sees or what the A.i. detects.
+3. Automatically create an anotation file for each image using data from the image's augmentations in order to train the A.i.   
+4. Automatically augment images using OpenCV before before the A.i. sees them in order to help the A.i. with classification  
+5. Manually and automatically trigger a USB Relay to control machines based on what the operator sees or what the A.i. detects  
 
 All the added scripts are prefixed with "JRS_" in the file names.  
 
@@ -22,6 +24,9 @@ Runs the trained A.i. model to classify object passing in front of the camera.
 Automatically augment images using OpenCV before before the A.i. sees them to help the A.i. with classification.  
 Automatically collect more training data to improve the A.i.  
 Automatically trigger a USB relay based on the classification results in order to control machines.   
+
+[Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)
+
 
 After following @TheAIGuy YouTube tutorials linked below,  
 You will know the basics of training an A.i. to classify images.  
