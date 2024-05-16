@@ -3,7 +3,7 @@
 # Machine Control Using A.i. Classifier 
 ### Combines OpenCV and Deep Learning to accomplish what neither can do alone
 
-Originally a genearal A.i. training forked from @TheAIGuy on YouTube.  
+Originally a genearal A.i. training tutorial forked from @TheAIGuy on YouTube.  
 John Shearing added Python scripts for the following:  
 1. Manually and automatically collect training images   
 2. Automatically augment the training images with hulls and bounding boxes using OpenCV in order to better train the A.i.   
