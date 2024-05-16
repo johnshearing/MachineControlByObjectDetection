@@ -24,11 +24,11 @@ This script also alows for manual control of a USB relay in order to control mac
 The script is very well commented. Just look at the script to learn more about it and how to use it.  
 Or run the following to get the online help:  
 
-Start at the Anaconda prompt and enter the following:
-`conda activate yolov4-gpu`
-Change to the following directory:
-`cd [MyUniquePathFile]\MachineControlByObjectDetection`
-`python JRS_CollectTrainingImages.py --help` to see the online help.  
+Start at the Anaconda prompt and enter the following:  
+`conda activate yolov4-gpu`  
+Change to the following directory:  
+`cd [MyUniquePathFile]\MachineControlByObjectDetection`  
+`python JRS_CollectTrainingImages.py --help` to see the online help.   
 
 **[JRS_DetectorSorter.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_DetectorSorter.py)** does all the things listed above and also does the following:   
 Runs the trained A.i. model to classify objects passing in front of the camera.  
