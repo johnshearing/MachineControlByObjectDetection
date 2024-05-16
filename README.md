@@ -19,7 +19,7 @@ An anotation file required for training the A.i. is automatically created for ea
 This script also alows for manual control of a USB relay in order to control machines during data collection.   
 The script is very well commented. Just look at the script to learn more about it and how to use it.  
 
-**JRS_DetectorSorter.py** does all the things listed above and also does the following:   
+**[JRS_DetectorSorter.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_DetectorSorter.py)** does all the things listed above and also does the following:   
 Runs the trained A.i. model to classify object passing in front of the camera.  
 Automatically augment images using OpenCV before before the A.i. sees them to help the A.i. with classification.  
 Automatically collect more training data to improve the A.i.  
