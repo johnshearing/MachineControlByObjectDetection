@@ -1,19 +1,23 @@
 <a href="https://johnshearing.github.io/">Main list of projects</a>  
 
-This repository was forked from @TheAIGuy on YouTube.    
-https://www.youtube.com/@TheAIGuy/videos  
-There are added Python scripts that make it work with a USB Relay to control machines based on what is detected.  
+Originally forked from @TheAIGuy on YouTube.  
+John Shearing added Python scripts for:  
+1. Manually and automatically collecting training images  
+2. Automatically augmenting the training images with hulls and bounding boxes using OpenCV in order to better train the A.i.   
+3. Automatically create an anotation file for each image collected using data from the the hulls and bounding boxes in the augmented images.  
+4. Manually and automatically triggering a USB Relay to control machines based on what the operator sees or what the A.i. detects.   
 All the added scripts are prefixed with "JRS_" in the file names.  
 
-The JRS_DetectorSorter.py script is the star of the show.
-Use this script to collect training data and also to classify images and trigger a relay based on the classification results.
+JRS_CollectTrainingImages.py is used to manually collect training images by key press as items pass the camera.  
+Images are automatically augmented with hulls and bounding boxes using OpenCV in order to train the A.i. better than is possible using unaugmented images.  
+An anotation file required for training the A.i. is automatically created for each augmented image using data from the the inserted hulls and bounding boxes.  
+This script also alows for manual control of a USB relay in order to control machines during data collection.   
 
+JRS_DetectorSorter.py does all the things listed above and also runs the trained model and can automatically trigger a USB relay based on the classification results.
 
-
-
-After following AIGuy's tutorial, look in JRS_DetectCommand.txt to setup and run JRS_DetectorSorter.py
-
-
+After following @TheAIGuy YouTube tutorials linked below,
+You will know the basics of training an A.i. to classify images.
+Then use my Python scripts to collect and anotate training data and to control machines using the A.i models that you train.
 
 
 # yolov4-custom-functions
