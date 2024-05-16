@@ -6,16 +6,15 @@
 [Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)  
 
 Follow the @TheAIGuy YouTube tutorial, found by scrolling down, to learn the basics of training an A.i. to classify images.  
-Then use my Python scripts to collect and annotate training data and to control machines using A.i models that you train and which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
+Then use the added Python scripts to collect and annotate training data and to control machines using A.i models that you train and which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
+All the added scripts are prefixed with "JRS_" in the file names.  
  
-John Shearing added Python scripts for the following:  
+Added Python scripts accomplish the following:  
 1. Manually and automatically collect training images   
 2. Automatically augment the training images with hulls and bounding boxes using OpenCV in order to better train the A.i.   
 3. Automatically create an annotation file for each image using data from the image's augmentations in order to train the A.i.   
 4. Automatically augment images using OpenCV before the A.i. sees them in order to help the A.i. with classification  
-5. Manually and automatically trigger a USB Relay to control machines based on what the operator sees or what the A.i. detects  
-
-All the added scripts are prefixed with "JRS_" in the file names.  
+5. Manually and automatically trigger a USB Relay to control machines based on what the operator sees or what the A.i. detects    
 
 **[JRS_CollectTrainingImages.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_CollectTrainingImages.py)** is used to manually collect training images by key press as items pass the camera.  
 Images are automatically augmented with hulls and bounding boxes using OpenCV in order to train the A.i. better than is possible using unaugmented images.  
