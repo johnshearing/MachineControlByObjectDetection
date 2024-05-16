@@ -75,7 +75,7 @@ python JRS_DetectorSorter.py --help
 
 
 ## Below is the genearal A.i. training tutorial forked from @TheAIGuy on YouTube.  
-Follow this tutorial and you will have the basic understanding needed to use the scripts I have provided.  
+Follow this tutorial and you will have the basic understanding needed to use the scripts provided above.  
 
 # yolov4-custom-functions
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
