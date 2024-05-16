@@ -28,7 +28,8 @@ Start at the Anaconda prompt and enter the following:
 `conda activate yolov4-gpu`  
 Change to the following directory:  
 `cd [MyUniquePathFile]\MachineControlByObjectDetection`  
-`python JRS_CollectTrainingImages.py --help` to see the online help.   
+To see the online help:  
+`python JRS_CollectTrainingImages.py --help`    
 
 **[JRS_DetectorSorter.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_DetectorSorter.py)** does all the things listed above and also does the following:   
 Runs the trained A.i. model to classify objects passing in front of the camera.  
