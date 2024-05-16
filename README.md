@@ -5,22 +5,22 @@
 
 [Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)  
 
-Follow the @TheAIGuy YouTube tutorial, found by scrowling down, to learn the basics of training an A.i. to classify images.  
-Then use my Python scripts to collect and anotate training data and to control machines using A.i models that you train and which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
+Follow the @TheAIGuy YouTube tutorial, found by scrolling down, to learn the basics of training an A.i. to classify images.  
+Then use my Python scripts to collect and annotate training data and to control machines using A.i models that you train and which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
  
 John Shearing added Python scripts for the following:  
 1. Manually and automatically collect training images   
 2. Automatically augment the training images with hulls and bounding boxes using OpenCV in order to better train the A.i.   
-3. Automatically create an anotation file for each image using data from the image's augmentations in order to train the A.i.   
-4. Automatically augment images using OpenCV before before the A.i. sees them in order to help the A.i. with classification  
+3. Automatically create an annotation file for each image using data from the image's augmentations in order to train the A.i.   
+4. Automatically augment images using OpenCV before the A.i. sees them in order to help the A.i. with classification  
 5. Manually and automatically trigger a USB Relay to control machines based on what the operator sees or what the A.i. detects  
 
 All the added scripts are prefixed with "JRS_" in the file names.  
 
 **[JRS_CollectTrainingImages.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_CollectTrainingImages.py)** is used to manually collect training images by key press as items pass the camera.  
 Images are automatically augmented with hulls and bounding boxes using OpenCV in order to train the A.i. better than is possible using unaugmented images.  
-An anotation file required for training the A.i. is automatically created for each augmented image using data from the the inserted hulls and bounding boxes.  
-This script also alows for manual control of a USB relay in order to control machines during data collection.   
+An annotation file required for training the A.i. is automatically created for each augmented image using data from the inserted hulls and bounding boxes.  
+This script also allows for manual control of a USB relay in order to control machines during data collection.   
 The script is very well commented. Just look at the script to learn more about it and how to use it.  
 Or run the following to get the online help:  
 
@@ -33,7 +33,7 @@ To see the online help:
 
 **[JRS_DetectorSorter.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_DetectorSorter.py)** does all the things listed above and also does the following:   
 Runs the trained A.i. model to classify objects passing in front of the camera.  
-Automatically augment images using OpenCV before before the A.i. sees them to help the A.i. with classification.  
+Automatically augment images using OpenCV before the A.i. sees them to help the A.i. with classification.  
 Automatically collect more training data to improve the A.i.  
 Automatically trigger a USB relay based on the classification results in order to control machines.   
 
@@ -76,7 +76,7 @@ python JRS_DetectorSorter.py --help
 
 
 ## Below is the genearal A.i. training tutorial forked from @TheAIGuy on YouTube.  
-Follow this tutorial and you will have the basic understanding needed to us the scripts I have provided.  
+Follow this tutorial and you will have the basic understanding needed to use the scripts I have provided.  
 
 # yolov4-custom-functions
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
