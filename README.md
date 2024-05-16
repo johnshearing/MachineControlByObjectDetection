@@ -28,9 +28,8 @@ Automatically trigger a USB relay based on the classification results in order t
 [Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)
 
 
-After following @TheAIGuy YouTube tutorials linked below,  
-You will know the basics of training an A.i. to classify images.  
-Then use my Python scripts to collect and anotate training data and to control machines using the A.i models that you train.  
+After following @TheAIGuy general YouTube tutorials linked below, You will know the basics of training an A.i. to classify images.  
+Then use my Python scripts to collect and anotate training data and to control machines using the A.i models that you train which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
 
 
 # yolov4-custom-functions
