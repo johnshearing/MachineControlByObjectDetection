@@ -5,7 +5,7 @@
 
 [Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)  
 
-After following the @TheAIGuy general YouTube tutorial found by scrowling down, you will know the basics of training an A.i. to classify images.  
+Follow the @TheAIGuy YouTube tutorial, found by scrowling down, to learn the basics of training an A.i. to classify images.  
 Then use my Python scripts to collect and anotate training data and to control machines using A.i models that you train and which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
  
 John Shearing added Python scripts for the following:  
@@ -24,7 +24,7 @@ This script also alows for manual control of a USB relay in order to control mac
 The script is very well commented. Just look at the script to learn more about it and how to use it.  
 
 **[JRS_DetectorSorter.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_DetectorSorter.py)** does all the things listed above and also does the following:   
-Runs the trained A.i. model to classify object passing in front of the camera.  
+Runs the trained A.i. model to classify objects passing in front of the camera.  
 Automatically augment images using OpenCV before before the A.i. sees them to help the A.i. with classification.  
 Automatically collect more training data to improve the A.i.  
 Automatically trigger a USB relay based on the classification results in order to control machines.   
