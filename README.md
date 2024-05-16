@@ -5,7 +5,7 @@ Originally forked from @TheAIGuy on YouTube.
 John Shearing added Python scripts for the following:  
 1. Manually and automatically collect training images   
 2. Automatically augment the training images with hulls and bounding boxes using OpenCV in order to better train the A.i.   
-3. Automatically create an anotation file for each image using data from the images augmentations.
+3. Automatically create an anotation file for each image using data from the image's augmentations.
 4. Automatically augment images using OpenCV before before the A.i. sees them to help the A.i. with classification.  
 5. Manually and automatically trigger a USB Relay to control machines based on what the operator sees or what the A.i. detects.   
 All the added scripts are prefixed with "JRS_" in the file names.  
