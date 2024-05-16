@@ -5,19 +5,22 @@ Originally forked from @TheAIGuy on YouTube.
 John Shearing added Python scripts for the following:  
 1. Manually and automatically collect training images   
 2. Automatically augment the training images with hulls and bounding boxes using OpenCV in order to better train the A.i.   
-3. Automatically create an anotation file for each image collected using data from the the hulls and bounding boxes in the augmented images.  
-4. Manually and automatically trigger a USB Relay to control machines based on what the operator sees or what the A.i. detects.   
+3. Automatically create an anotation file for each image using data from the images augmentations.
+4. Automatically augment images using OpenCV before before the A.i. sees them to help the A.i. with classification.  
+5. Manually and automatically trigger a USB Relay to control machines based on what the operator sees or what the A.i. detects.   
 All the added scripts are prefixed with "JRS_" in the file names.  
 
-JRS_CollectTrainingImages.py is used to manually collect training images by key press as items pass the camera.  
+**JRS_CollectTrainingImages.py** is used to manually collect training images by key press as items pass the camera.  
 Images are automatically augmented with hulls and bounding boxes using OpenCV in order to train the A.i. better than is possible using unaugmented images.  
 An anotation file required for training the A.i. is automatically created for each augmented image using data from the the inserted hulls and bounding boxes.  
 This script also alows for manual control of a USB relay in order to control machines during data collection.   
 The script is very well commented. Just look at the script to learn more about it and how to use it.  
 
-JRS_DetectorSorter.py does all the things listed above and also does the following:  
-Runs the trained model and can automatically trigger a USB relay based on the classification results in order to control machines.  
-Automatically collect training data  
+**JRS_DetectorSorter.py** does all the things listed above and also does the following:   
+Runs the trained A.i. model to classify object passing in front of the camera.  
+Automatically augment images using OpenCV before before the A.i. sees them to help the A.i. with classification.  
+Automatically collect more training data to improve the A.i.  
+Automatically trigger a USB relay based on the classification results in order to control machines.   
 
 After following @TheAIGuy YouTube tutorials linked below,  
 You will know the basics of training an A.i. to classify images.  
