@@ -1,6 +1,6 @@
 <a href="https://johnshearing.github.io/">Main list of projects</a>  
 
-# Machine Control Using A.i. Classifier 
+# Machine Control Using OpenCV and A.i. Classifier 
 ### Combines OpenCV and Deep Learning to accomplish what neither can do alone  
 
 [Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)  
