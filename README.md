@@ -1,5 +1,6 @@
 <a href="https://johnshearing.github.io/">Main list of projects</a>  
 
+# Machine Control Using A.i. Classifier
 Originally forked from @TheAIGuy on YouTube.  
 John Shearing added Python scripts for:  
 1. Manually and automatically collecting training images  
