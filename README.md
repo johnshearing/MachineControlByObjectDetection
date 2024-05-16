@@ -22,6 +22,7 @@ Images are automatically augmented with hulls and bounding boxes using OpenCV in
 An anotation file required for training the A.i. is automatically created for each augmented image using data from the the inserted hulls and bounding boxes.  
 This script also alows for manual control of a USB relay in order to control machines during data collection.   
 The script is very well commented. Just look at the script to learn more about it and how to use it.  
+Or run `python JRS_CollectTrainingImages.py --help` to see the online help.  
 
 **[JRS_DetectorSorter.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_DetectorSorter.py)** does all the things listed above and also does the following:   
 Runs the trained A.i. model to classify objects passing in front of the camera.  
