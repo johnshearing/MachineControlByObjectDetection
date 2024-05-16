@@ -13,7 +13,7 @@ John Shearing added Python scripts for the following:
 
 All the added scripts are prefixed with "JRS_" in the file names.  
 
-**JRS_CollectTrainingImages.py** is used to manually collect training images by key press as items pass the camera.  
+**[JRS_CollectTrainingImages.py](https://github.com/johnshearing/MachineControlByObjectDetection/blob/main/JRS_CollectTrainingImages.py)** is used to manually collect training images by key press as items pass the camera.  
 Images are automatically augmented with hulls and bounding boxes using OpenCV in order to train the A.i. better than is possible using unaugmented images.  
 An anotation file required for training the A.i. is automatically created for each augmented image using data from the the inserted hulls and bounding boxes.  
 This script also alows for manual control of a USB relay in order to control machines during data collection.   
