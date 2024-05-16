@@ -1,9 +1,13 @@
 <a href="https://johnshearing.github.io/">Main list of projects</a>  
 
 # Machine Control Using A.i. Classifier 
-### Combines OpenCV and Deep Learning to accomplish what neither can do alone
+### Combines OpenCV and Deep Learning to accomplish what neither can do alone  
 
-Originally a genearal A.i. training tutorial forked from @TheAIGuy on YouTube.  
+[Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)  
+
+After following the @TheAIGuy general YouTube tutorial found by scrowling down, You will know the basics of training an A.i. to classify images.  
+Then use my Python scripts to collect and anotate training data and to control machines using A.i models that you train and which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
+ 
 John Shearing added Python scripts for the following:  
 1. Manually and automatically collect training images   
 2. Automatically augment the training images with hulls and bounding boxes using OpenCV in order to better train the A.i.   
@@ -25,12 +29,46 @@ Automatically augment images using OpenCV before before the A.i. sees them to he
 Automatically collect more training data to improve the A.i.  
 Automatically trigger a USB relay based on the classification results in order to control machines.   
 
-[Video showing JRS_DetectorSorter.py in operation.](https://youtu.be/Pq97KxsR0aI)
+### Using JRS_DetectorSorter.py
+Look in the following file and make sure there is one class per line  
+[MyUniquePathFile]\MachineControlByObjectDetection\data\classes\obj.names  
+
+Start at the Anaconda prompt and enter the following:  
+conda activate yolov4-gpu  
+
+Change to the following directory:  
+cd [MyUniquePathFile]\MachineControlByObjectDetection  
+
+Put your weights file in the following directory:  
+[MyUniquePathFile]\MachineControlByObjectDetection\data  
+
+Rename your weights file to the following:  
+custom.weights  
+
+Convert YOLOv4 to TensorFlow before running detector:  
+python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_size 416 --model yolov4  
+
+Run detector against sample video input.  
+All defaults are used.  
+Relay will be used if inserted into USB port.  
+python JRS_DetectorSorter.py  
+
+Run detector against webcam input.  
+In this case selecting webcam input from webcam at index 0.  
+Score is set to 1/2 sensitivity. (.1 is most sensitive.) (.9 least sensitive)   
+Count flag sends relay status info to the console along with info about objects detected.  
+Output flag sends a video of detected objects to disk.  
+Relay will be used if inserted into USB port.  
+python JRS_DetectorSorter.py --video 0 --score .5 --count --output ./detections/results.avi  
+
+See all the options with the following command.  
+python JRS_DetectorSorter.py --help  
 
 
-After following @TheAIGuy general YouTube tutorials linked below, You will know the basics of training an A.i. to classify images.  
-Then use my Python scripts to collect and anotate training data and to control machines using the A.i models that you train which take advantage of the combined power of OpenCV (Computer Vision) and Deep Learning (A.i.).  
 
+
+## Below is the genearal A.i. training tutorial forked from @TheAIGuy on YouTube.  
+Follow this tutorial and you will have the basic understanding needed to us the scripts I have provided.  
 
 # yolov4-custom-functions
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
