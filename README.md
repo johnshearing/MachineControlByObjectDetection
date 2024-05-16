@@ -38,27 +38,27 @@ Automatically trigger a USB relay based on the classification results in order t
 
 ### Using JRS_DetectorSorter.py
 Look in the following file and make sure there is one class per line  
-[MyUniquePathFile]\MachineControlByObjectDetection\data\classes\obj.names  
+`[MyUniquePathFile]\MachineControlByObjectDetection\data\classes\obj.names`  
 
 Start at the Anaconda prompt and enter the following:  
-conda activate yolov4-gpu  
+`conda activate yolov4-gpu`  
 
 Change to the following directory:  
-cd [MyUniquePathFile]\MachineControlByObjectDetection  
+`cd [MyUniquePathFile]\MachineControlByObjectDetection`  
 
 Put your weights file in the following directory:  
-[MyUniquePathFile]\MachineControlByObjectDetection\data  
+`[MyUniquePathFile]\MachineControlByObjectDetection\data`  
 
 Rename your weights file to the following:  
-custom.weights  
+`custom.weights`  
 
 Convert YOLOv4 to TensorFlow before running detector:  
-python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_size 416 --model yolov4  
+`python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_size 416 --model yolov4`  
 
 Run detector against sample video input.  
 All defaults are used.  
 Relay will be used if inserted into USB port.  
-python JRS_DetectorSorter.py  
+`python JRS_DetectorSorter.py`  
 
 Run detector against webcam input.  
 In this case selecting webcam input from webcam at index 0.  
@@ -66,10 +66,10 @@ Score is set to 1/2 sensitivity. (.1 is most sensitive.) (.9 least sensitive)
 Count flag sends relay status info to the console along with info about objects detected.  
 Output flag sends a video of detected objects to disk.  
 Relay will be used if inserted into USB port.  
-python JRS_DetectorSorter.py --video 0 --score .5 --count --output ./detections/results.avi  
+`python JRS_DetectorSorter.py --video 0 --score .5 --count --output ./detections/results.avi`  
 
 See all the options with the following command.  
-python JRS_DetectorSorter.py --help  
+`python JRS_DetectorSorter.py --help`  
 
 
 
